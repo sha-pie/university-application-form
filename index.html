@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Application Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<form class="application-form">
+
+    <!-- ================= PAGE 1 ================= -->
+    <section class="page">
+
+        <!-- HEADER -->
+        <header class="university-header">
+
+            <div class="logo-area">
+                <img src="images/DMI LOGO.png" alt="DMI LOGO">
+            </div>
+
+            <div class="university-info">
+                <h1>DMI – ST. JOHN THE BAPTIST UNIVERSITY</h1>
+                <h2>MALAWI</h2>
+                <p>(Run by the Fathers of MMI, Sisters of DMI and Collaborators)</p>
+                <p><b>Fully approved & accredited by the Government of Malawi</b></p>
+                <p><i>Website: www.dmisjbu.edu.mw</i></p>
+            </div>
+
+            <div class="photo-box">
+                <p>Affix recent</p>
+                <p>passport size</p>
+                <p>color photo</p>
+            </div>
+
+        </header>
+
+        <!-- CAMPUSES -->
+        <div class="campuses">
+
+            <div>
+                <h3>MANGOCHI CAMPUS</h3>
+                <p>P.O Box 406</p>
+                <p>Mangochi, Malawi, Central Africa</p>
+                <p>Ph: +265 991287235, +265 884100676</p>
+                <p>Tel: 01599790</p>
+                <p>E-mail: dmisjbu@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>LILONGWE CAMPUS</h3>
+                <p>P.O Box 2398, Area 4</p>
+                <p>Lilongwe, Malawi, Central Africa</p>
+                <p>Phone: +265 881047088</p>
+                <p>+265 992371901</p>
+                <p>E-mail: dmisjbulilongwe@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>BLANTYRE CAMPUS</h3>
+                <p>P.O Box 5806</p>
+                <p>Raynor Avenue, Limbe</p>
+                <p>Blantyre, Malawi, Central Africa</p>
+                <p>Ph: +265 999933788, +265 888711115</p>
+                <p>E-mail: ticblantyre@gmail.com</p>
+            </div>
+
+        </div>
+
+        <!-- FORM TITLE -->
+        <div class="form-title">
+
+            <label>
+                <input type="checkbox" name="diploma">
+                Diploma
+            </label>
+
+            <label>
+                <input type="checkbox" name="degree">
+                Bachelor Degree
+            </label>
+
+            <h2>APPLICATION FORM</h2>
+
+            <label>
+                Application No:
+                <input type="text" name="application_number">
+            </label>
+
+        </div>
+
+
+        <!-- PERSONAL DETAILS -->
+
+        <h3 class="section-title">A. PERSONAL DETAILS</h3>
+
+        <div class="form-row">
+
+            <label>
+                1. Title:
+                <input type="checkbox" name="title" value="Mr"> Mr.
+                <input type="checkbox" name="title" value="Ms"> Ms.
+                <small>(Please Tick one)</small>
+            </label>
+
+        </div>
+
+        <label class="full-width">
+            2. Name of the Applicant: <small>(In Capital Letter)</small>
+        </label>
+
+        <div class="name-grid">
+
+            <div>
+                <label>SURNAME</label>
+                <input type="text" name="surname">
+            </div>
+
+            <div>
+                <label>FIRST NAME</label>
+                <input type="text" name="first_name">
+            </div>
+
+            <div>
+                <label>INITIAL</label>
+                <input type="text" name="initial">
+            </div>
+
+        </div>
+
+
+        <div class="grid-3">
+
+            <label>
+                3. Gender:
+                <input type="checkbox" name="gender" value="Male"> Male
+                <input type="checkbox" name="gender" value="Female"> Female
+            </label>
+
+            <label>
+                4. Date of Birth:
+                <input type="date" name="dob">
+            </label>
+
+            <label>
+                5. Age:
+                <input type="number" name="age">
+            </label>
+
+        </div>
+
+
+        <div class="grid-3">
+
+            <label>
+                6. Marital Status:
+                <input type="checkbox" name="marital" value="Married"> Married
+                <input type="checkbox" name="marital" value="Single"> Single
+            </label>
+
+            <label>
+                7. Nationality:
+                <input type="text" name="nationality">
+            </label>
+
+            <label>
+                8. Religion:
+                <input type="text" name="religion">
+            </label>
+
+        </div>
+
+
+        <div class="grid-3">
+
+            <label>
+                9. Home District:
+                <input type="text" name="district">
+            </label>
+
+            <label>
+                10. Traditional Authority:
+                <input type="text" name="traditional_authority">
+            </label>
+
+            <label>
+                11. Village:
+                <input type="text" name="village">
+            </label>
+
+        </div>
+
+
+        <div class="grid-2">
+
+            <label>
+                12. Tribe:
+                <input type="text" name="tribe">
+            </label>
+
+            <label>
+                13. Passport/NRC No:
+                <input type="text" name="passport">
+            </label>
+
+        </div>
+
+
+        <!-- NEXT OF KIN -->
+
+        <h3 class="section-title">B. NEXT OF KIN</h3>
+
+        <div class="grid-4">
+
+            <label>
+                Title
+                <input type="text" name="kin_title">
+            </label>
+
+            <label>
+                Surname
+                <input type="text" name="kin_surname">
+            </label>
+
+            <label>
+                First Name
+                <input type="text" name="kin_first_name">
+            </label>
+
+            <label>
+                Initial
+                <input type="text" name="kin_initial">
+            </label>
+
+        </div>
+
+        <label class="full-width">
+            Address:
+            <input type="text" name="kin_address">
+        </label>
+
+        <div class="grid-3">
+
+            <label>
+                Email ID:
+                <input type="email" name="kin_email">
+            </label>
+
+            <label>
+                Mobile No:
+                <input type="tel" name="kin_mobile">
+            </label>
+
+            <label>
+                Occupation:
+                <input type="text" name="kin_occupation">
+            </label>
+
+        </div>
+
+        <div class="grid-2">
+
+            <label>
+                Organization:
+                <input type="text" name="kin_organization">
+            </label>
+
+            <label>
+                Relationship:
+                <input type="text" name="kin_relationship">
+            </label>
+
+        </div>
+
+
+        <!-- PROGRAMME -->
+
+        <h3 class="section-title">C. PROGRAMME APPLIED FOR</h3>
+
+        <p class="instruction">
+            Campuses: Mangochi (MH), Lilongwe (LW), Blantyre (BT)
+            (Choose the one appropriate)
+        </p>
+
+
+        <!-- FIRST CHOICE -->
+        <div class="choice-box">
+
+            <div class="choice-number">
+                First<br>Choice
+            </div>
+
+            <div class="choice-content">
+
+                <label>
+                    Programme Name
+                    <input type="text" name="first_programme">
+                </label>
+
+                <div class="choice-options">
+
+                    <span>Mode of Learning:</span>
+
+                    <label>
+                        <input type="checkbox" name="first_mode" value="Face to Face">
+                        Face to Face
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="first_mode" value="Blended">
+                        Blended
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="first_mode" value="Online">
+                        Online
+                    </label>
+
+                    <span>Campus:</span>
+
+                    <label>
+                        <input type="checkbox" name="first_campus" value="MH"> MH
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="first_campus" value="LW"> LW
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="first_campus" value="BT"> BT
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SECOND CHOICE -->
+        <div class="choice-box">
+
+            <div class="choice-number">
+                Second<br>Choice
+            </div>
+
+            <div class="choice-content">
+
+                <label>
+                    Programme Name
+                    <input type="text" name="second_programme">
+                </label>
+
+                <div class="choice-options">
+
+                    <span>Mode of Learning:</span>
+
+                    <label>
+                        <input type="checkbox" name="second_mode" value="Face to Face">
+                        Face to Face
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="second_mode" value="Blended">
+                        Blended
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="second_mode" value="Online">
+                        Online
+                    </label>
+
+                    <span>Campus:</span>
+
+                    <label>
+                        <input type="checkbox" name="second_campus" value="MH"> MH
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="second_campus" value="LW"> LW
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="second_campus" value="BT"> BT
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- THIRD CHOICE -->
+        <div class="choice-box">
+
+            <div class="choice-number">
+                Third<br>Choice
+            </div>
+
+            <div class="choice-content">
+
+                <label>
+                    Programme Name
+                    <input type="text" name="third_programme">
+                </label>
+
+                <div class="choice-options">
+
+                    <span>Mode of Learning:</span>
+
+                    <label>
+                        <input type="checkbox" name="third_mode" value="Face to Face">
+                        Face to Face
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="third_mode" value="Blended">
+                        Blended
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="third_mode" value="Online">
+                        Online
+                    </label>
+
+                    <span>Campus:</span>
+
+                    <label>
+                        <input type="checkbox" name="third_campus" value="MH"> MH
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="third_campus" value="LW"> LW
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="third_campus" value="BT"> BT
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- REDIRECTION -->
+
+        <h3 class="section-title">D. REDIRECTION</h3>
+
+        <p>
+            If you are not selected to any of your chosen programmes due to stiff
+            competition and limited available space, you may be considered for
+            selection to any programme which you did not choose but closer to
+            your choice.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= PAGE 2 ================= -->
+
+    <section class="page">
+
+        <h3 class="section-title">
+            E. PREVIOUS ACADEMIC RECORD
+        </h3>
+
+        <p>
+            Have you ever been registered as a student of any public university
+            in Malawi?
+        </p>
+
+        <label>
+            <input type="checkbox" name="previous_university" value="Yes">
+            Yes
+        </label>
+
+        <label>
+            <input type="checkbox" name="previous_university" value="No">
+            No
+        </label>
+
+        <div class="grid-3">
+
+            <label>
+                When:
+                <input type="text" name="previous_when">
+            </label>
+
+            <label>
+                Programme:
+                <input type="text" name="previous_programme">
+            </label>
+
+            <label>
+                Institution:
+                <input type="text" name="previous_institution">
+            </label>
+
+        </div>
+
+        <label class="full-width">
+            Reason for leaving your previous institution:
+            <input type="text" name="reason_leaving">
+        </label>
+
+
+        <!-- ACADEMIC RECORD -->
+
+        <h3 class="section-title">
+            F. ACADEMIC RECORD
+        </h3>
+
+        <p>
+            <b>
+                (MSCE/IGCSE OR OTHER EQUIVALENT INTERNATIONALLY RECOGNIZED
+                QUALIFICATIONS AT 'O' LEVEL)
+            </b>
+        </p>
+
+        <div class="qualification-types">
+
+            <label>
+                <input type="checkbox" name="qualification" value="MSCE">
+                MSCE
+            </label>
+
+            <label>
+                <input type="checkbox" name="qualification" value="O-Level">
+                O-Level
+            </label>
+
+            <label>
+                <input type="checkbox" name="qualification" value="A-Level">
+                A-Level
+            </label>
+
+            <label>
+                <input type="checkbox" name="qualification" value="Other">
+                Other
+            </label>
+
+            <label>
+                Specify:
+                <input type="text" name="qualification_other">
+            </label>
+
+        </div>
+
+        <p class="small-text">
+            You must attach photocopies of your statement of results or
+            certificates, officially stamped and signed by the Head teacher
+            of your last school where you wrote the examinations, or the
+            District Education Manager, or the District commissioner or any
+            commissioner of Oaths. You cannot use two independent Certificates
+            for purposes of accumulating credits.
+        </p>
+
+
+        <h4>i. MSCE/O-Level or equivalent qualification (s)</h4>
+
+        <table class="academic-table">
+
+            <thead>
+                <tr>
+                    <th>1st Attempt Grades</th>
+                    <th>2nd Attempt Grades</th>
+                    <th>3rd Attempt Grades</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Year: <input type="text"></td>
+                    <td>Year: <input type="text"></td>
+                    <td>Year: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Qualification: <input type="text"></td>
+                    <td>Qualification: <input type="text"></td>
+                    <td>Qualification: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Certificate #: <input type="text"></td>
+                    <td>Certificate #: <input type="text"></td>
+                    <td>Certificate #: <input type="text"></td>
+                </tr>
+
+                <tr class="large-row">
+                    <td>
+                        Centre/School Name:
+                        <input type="text">
+                    </td>
+
+                    <td>
+                        Centre/School Name:
+                        <input type="text">
+                    </td>
+
+                    <td>
+                        Centre/School Name:
+                        <input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Centre #: <input type="text"></td>
+                    <td>Centre #: <input type="text"></td>
+                    <td>Centre #: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Candidate #: <input type="text"></td>
+                    <td>Candidate #: <input type="text"></td>
+                    <td>Candidate #: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>From: <input type="text"> To: <input type="text"></td>
+                    <td>From: <input type="text"> To: <input type="text"></td>
+                    <td>From: <input type="text"> To: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Country: <input type="text"></td>
+                    <td>Country: <input type="text"></td>
+                    <td>Country: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Subject (Highest to Lowest)</td>
+                    <td>Subject (Highest to Lowest)</td>
+                    <td>Subject (Highest to Lowest)</td>
+                </tr>
+
+                <!-- 10 SUBJECTS -->
+
+                <tr><td>1. <input type="text"></td><td>1. <input type="text"></td><td>1. <input type="text"></td></tr>
+                <tr><td>2. <input type="text"></td><td>2. <input type="text"></td><td>2. <input type="text"></td></tr>
+                <tr><td>3. <input type="text"></td><td>3. <input type="text"></td><td>3. <input type="text"></td></tr>
+                <tr><td>4. <input type="text"></td><td>4. <input type="text"></td><td>4. <input type="text"></td></tr>
+                <tr><td>5. <input type="text"></td><td>5. <input type="text"></td><td>5. <input type="text"></td></tr>
+                <tr><td>6. <input type="text"></td><td>6. <input type="text"></td><td>6. <input type="text"></td></tr>
+                <tr><td>7. <input type="text"></td><td>7. <input type="text"></td><td>7. <input type="text"></td></tr>
+                <tr><td>8. <input type="text"></td><td>8. <input type="text"></td><td>8. <input type="text"></td></tr>
+                <tr><td>9. <input type="text"></td><td>9. <input type="text"></td><td>9. <input type="text"></td></tr>
+                <tr><td>10. <input type="text"></td><td>10. <input type="text"></td><td>10. <input type="text"></td></tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- ================= PAGE 3 ================= -->
+
+    <section class="page">
+
+        <h4>ii. A-Level or equivalent qualification (s)</h4>
+
+        <table class="academic-table">
+
+            <thead>
+                <tr>
+                    <th>1st Attempt Grades</th>
+                    <th>2nd Attempt Grades</th>
+                    <th>3rd Attempt Grades</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Year: <input type="text"></td>
+                    <td>Year: <input type="text"></td>
+                    <td>Year: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Qualification: <input type="text"></td>
+                    <td>Qualification: <input type="text"></td>
+                    <td>Qualification: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Certificate #: <input type="text"></td>
+                    <td>Certificate #: <input type="text"></td>
+                    <td>Certificate #: <input type="text"></td>
+                </tr>
+
+                <tr class="large-row">
+                    <td>Centre/School Name:<input type="text"></td>
+                    <td>Centre/School Name:<input type="text"></td>
+                    <td>Centre/School Name:<input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Centre #: <input type="text"></td>
+                    <td>Centre #: <input type="text"></td>
+                    <td>Centre #: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Candidate #: <input type="text"></td>
+                    <td>Candidate #: <input type="text"></td>
+                    <td>Candidate #: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>From: <input type="text"> To: <input type="text"></td>
+                    <td>From: <input type="text"> To: <input type="text"></td>
+                    <td>From: <input type="text"> To: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Country: <input type="text"></td>
+                    <td>Country: <input type="text"></td>
+                    <td>Country: <input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Subject (Highest to Lowest)</td>
+                    <td>Subject (Highest to Lowest)</td>
+                    <td>Subject (Highest to Lowest)</td>
+                </tr>
+
+                <tr><td>1. <input type="text"></td><td>1. <input type="text"></td><td>1. <input type="text"></td></tr>
+                <tr><td>2. <input type="text"></td><td>2. <input type="text"></td><td>2. <input type="text"></td></tr>
+                <tr><td>3. <input type="text"></td><td>3. <input type="text"></td><td>3. <input type="text"></td></tr>
+                <tr><td>4. <input type="text"></td><td>4. <input type="text"></td><td>4. <input type="text"></td></tr>
+                <tr><td>5. <input type="text"></td><td>5. <input type="text"></td><td>5. <input type="text"></td></tr>
+                <tr><td>6. <input type="text"></td><td>6. <input type="text"></td><td>6. <input type="text"></td></tr>
+                <tr><td>7. <input type="text"></td><td>7. <input type="text"></td><td>7. <input type="text"></td></tr>
+                <tr><td>8. <input type="text"></td><td>8. <input type="text"></td><td>8. <input type="text"></td></tr>
+                <tr><td>9. <input type="text"></td><td>9. <input type="text"></td><td>9. <input type="text"></td></tr>
+                <tr><td>10. <input type="text"></td><td>10. <input type="text"></td><td>10. <input type="text"></td></tr>
+
+            </tbody>
+
+        </table>
+
+
+        <!-- FINANCIAL SUPPORT -->
+
+        <h3 class="section-title">G. FINANCIAL SUPPORT</h3>
+
+        <label class="full-width">
+            i) If selected, how will you pay for your university education?
+            <input type="text" name="payment_method">
+        </label>
+
+        <label class="full-width">
+            ii) Give the name of the sponsor/others/Etc., or put "self"
+            <input type="text" name="sponsor">
+        </label>
+
+
+        <!-- SPECIAL NEEDS -->
+
+        <h3 class="section-title">
+            H. CANDIDATES WITH SPECIAL NEEDS
+        </h3>
+
+        <p>
+            The University encourages you to disclose any disability/medical
+            condition which could disadvantage your ability to study.
+            All offers are made on academic grounds only, and the information
+            you submit will be used to help the University provide appropriate
+            support. Please tick all that apply.
+        </p>
+
+        <div class="special-needs">
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="No Disability">
+                1. No Disability
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Learning Difficulty">
+                2. Learning Difficulty
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Hearing">
+                3. Deaf/Serious Hearing impairment
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Personal Care">
+                4. Personal care support
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Unseen Disability">
+                5. Unseen Disability: Eg. Diabetes
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Blind">
+                6. Blind/serious visual impairment
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Wheelchair">
+                7. Wheelchair user/Mobility issues
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Mental Health">
+                8. Mental Health condition
+            </label>
+
+            <label>
+                <input type="checkbox" name="special_needs[]" value="Other">
+                9. Other disability not listed here
+            </label>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PAGE 4 ================= -->
+
+    <section class="page">
+
+        <label class="full-width">
+            Please detail other disability or additional support needs:
+            <textarea name="additional_support"></textarea>
+        </label>
+
+
+        <!-- DECLARATION -->
+
+        <h3 class="section-title">DECLARATION</h3>
+
+        <p>
+            I
+            <input class="inline-input" type="text" name="declaration_name">
+            hereby certify that all the information given on this form is true
+            and further recognize that my application will not be processed
+            if it is incomplete.
+        </p>
+
+        <div class="grid-2">
+
+            <label>
+                Signature:
+                <input type="text" name="signature">
+            </label>
+
+            <label>
+                Date:
+                <input type="date" name="declaration_date">
+            </label>
+
+        </div>
+
+
+        <!-- CHECKLIST -->
+
+        <h3 class="section-title">CHECKLIST</h3>
+
+        <p>
+            <b>
+                I confirm that I have duly completed all the relevant sections
+                of this application form and attached the following supporting
+                documents:
+            </b>
+        </p>
+
+
+        <table class="checklist-table">
+
+            <tr>
+                <td>
+                    1. Copies of all relevant certificates and academic
+                    transcripts which are being used for the application.
+                    These must be duly certified by a Commissioner of Oaths
+                    as true copies of the original.
+                </td>
+
+                <td>
+                    <input type="checkbox" name="documents_certificates">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    2. Source of funding, i.e. official scholarship
+                    award/sponsorship letter.
+                </td>
+
+                <td>
+                    <input type="checkbox" name="documents_funding">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    3. Proof of payment of an appropriate application fee
+                    bearing my name and the amount of application fee paid.
+                </td>
+
+                <td>
+                    <input type="checkbox" name="documents_payment">
+                </td>
+            </tr>
+
+        </table>
+
+
+        <div class="submit-area">
+
+            <button type="button" onclick="window.print()">
+                Print / Save Application
+            </button>
+
+            <button type="reset">
+                Clear Form
+            </button>
+
+        </div>
+
+    </section>
+
+</form>
+
+</body>
+</html>
