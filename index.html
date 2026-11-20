@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Application Form</title>
 
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const form = document.querySelector(".application-form");
+
+    let count = 1;
+
+    form.querySelectorAll(
+        "input:not([name]), textarea:not([name]), select:not([name])"
+    ).forEach(function(field) {
+
+        field.name = "academic_field_" + count;
+
+        count++;
+
+    });
+
+});
+</script>
 <body>
 
-<form class="application-form">
-
+<form class="application-form" method="POST" action="{{ url_for('home') }}">
+{% if success %}
+<div class="submission-message">
+    Your application has been submitted successfully!
+</div>
+{% endif %}
     <!-- ================= PAGE 1 ================= -->
     <section class="page">
 
@@ -19,7 +41,7 @@
         <header class="university-header">
 
             <div class="logo-area">
-                <img src="images/DMI LOGO.png" alt="DMI LOGO">
+               <img src="{{ url_for('static', filename='images/logo png.png') }}" alt="University Logo">
             </div>
 
             <div class="university-info">
@@ -925,15 +947,19 @@
 
         <div class="submit-area">
 
-            <button type="button" onclick="window.print()">
-                Print / Save Application
-            </button>
+    <button type="submit">
+        Submit Application
+    </button>
 
-            <button type="reset">
-                Clear Form
-            </button>
+    <button type="button" onclick="window.print()">
+        Print / Save Application
+    </button>
 
-        </div>
+    <button type="reset">
+        Clear Form
+    </button>
+
+</div>
 
     </section>
 
